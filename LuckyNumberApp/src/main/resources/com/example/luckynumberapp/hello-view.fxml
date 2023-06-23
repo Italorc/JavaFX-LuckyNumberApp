@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: #366;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.luckynumberapp.HelloController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="400.0" style="-fx-background-color: #365;">
+         <children>
+            <Text fill="WHITE" layoutX="64.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lucky Number App">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="51.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed by: Italo Ribeiro, COMP1008, 2023-04-11" />
+            <ImageView fitHeight="238.0" fitWidth="174.0" layoutX="108.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@215-2159027_good-luck-clover-clipart-png-download-artificial-flower.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="154.0" layoutY="496.0" promptText="Enter your name" fx:id="xName">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <DatePicker layoutX="153.0" layoutY="548.0" fx:id="xDob" />
+            <Label layoutX="51.0" layoutY="501.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="551.0" text="Date of birth" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="77.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name and date of birth, then click on submit button." wrappingWidth="246.75506973266602">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="70.0" layoutY="611.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="30.0" prefWidth="99.0" text="Close" fx:id="xCancelButton" />
+            <Button layoutX="215.0" layoutY="611.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="30.0" prefWidth="99.0" text="Submit" fx:id="xSubmitButton" />
+            <Text fill="#ebff50" layoutX="77.0" layoutY="689.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="246.75506973266602" fx:id="xErrorMsg">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fx:id="welcomeText" fill="WHITE" layoutX="419.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lucky numbers have been a part of human life since ancient times. They are believed to bring luck, fortune and good health to those who belive in them. The significance of lucky numbers varies from culture to culture, but the believe is that thay can bring positive energy and good luck. They are used by many people to add luck and optimism to their lives. Lucky numbers are important because they can be used as a reminder of hope and good fortune. They can also serve as a reminder to stay positive and have faith in the future." textAlignment="JUSTIFY" wrappingWidth="580.53662109375">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
